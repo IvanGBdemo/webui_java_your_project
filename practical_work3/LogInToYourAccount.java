@@ -32,8 +32,8 @@ public class LogInToYourAccount {
         driver.findElement(By.xpath("//html/body/section/a")).click();
         driver.switchTo().parentFrame();
 
-        webDriverWait.until(ExpectedConditions.elementToBeClickable(By.xpath("//body/div/div/div/div/div/div/div/a/div/i[@class='i-icon i-icon-fl-profile']")));
-        driver.findElement(By.xpath("//body/div/div/div/div/div/div/div/a/div/i[@class='i-icon i-icon-fl-profile']")).click();
+        webDriverWait.until(ExpectedConditions.elementToBeClickable(By.xpath("//body/div/div/div/div/div/div/div/a/div/i[@class='i-icon i-icon-fl-profile']"))); 
+        driver.findElement(By.xpath("//body/div/div/div/div/div/div/div/a/div/i[@class='i-icon i-icon-fl-profile']")).click(); // ненадёжный локатор !
 
         webDriverWait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//label[text()='\n" +
                 "            Войти с помощью пароля\n" +
@@ -44,7 +44,7 @@ public class LogInToYourAccount {
 //input[@class='c-text-field__input js-field__login u-valid']
         driver.findElement(By.xpath("//html/body/div[2]/div/div[3]/div/div/div[2]/div/div[2]/div[2]/div/div[2]/form/div/div[1]/div/input[1]"))
                 .sendKeys("jokovich85@mail.ru");
-        driver.findElement(By.xpath("//html/body/div[2]/div/div[3]/div/div/div[2]/div/div[2]/div[2]/div/div[2]/form/div/div[2]/input[1]"))
+        driver.findElement(By.xpath("//html/body/div[2]/div/div[3]/div/div/div[2]/div/div[2]/div[2]/div/div[2]/form/div/div[2]/input[1]"))  // ненадёжный локатор !
                 .sendKeys("Мвидео21");
         driver.findElement(By.id("submit-button")).click();
 
