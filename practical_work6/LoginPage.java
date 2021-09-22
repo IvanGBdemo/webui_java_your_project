@@ -7,7 +7,7 @@ import org.openqa.selenium.support.FindBy;
 
 public class LoginPage extends BaseView {
 
-    @FindBy(xpath = "//label[text()='Войти с помощью пароля']")
+    @FindBy(xpath = "//*[@id=\"js-product-tabs\"]/div[2]/div/div[1]/label")
     public WebElement clickTitleEntrance;
 
     @FindBy(id = "login-original")
